@@ -1,0 +1,115 @@
+fun main() {
+    // Valores predefinidos
+    val a = 12.0
+    val b = 5.0
+
+    println("Calculadora")
+    println("Primer valor: $a")
+    println("Segundo valor: $b")
+
+    // Ejecutar la operación
+    val resultado = calcular(a, b)
+    println("Resultado de la suma: $resultado")
+}
+
+// Función principal que llama a la suma
+fun calcular(a: Double, b: Double): Double {
+    return sumar(a, b)
+}
+
+// Operación matemática
+fun sumar(a: Double, b: Double): Double = a + b
+
+Calculadora
+Primer valor: 12.0
+Segundo valor: 5.0
+Resultado de la suma: 17.0
+
+------------------------------------------------------------
+
+fun main() {
+    // Valores predefinidos
+    val a = 10.0
+    val b = 5.0
+
+    println("Calculadora")
+    println("Primer valor: $a")
+    println("Segundo valor: $b")
+
+    // Ejecutar la operación
+    val resultado = calcular(a, b)
+    println("Resultado de la resta: $resultado")
+}
+
+// Función principal que llama a la resta
+fun calcular(a: Double, b: Double): Double {
+    return restar(a, b)
+}
+
+// Operación matemática
+fun restar(a: Double, b: Double): Double = a - b
+
+Calculadora
+Primer valor: 10.0
+Segundo valor: 5.0
+Resultado de la resta: 5.0
+------------------------------------------------------------
+fun main() {
+    // Valores predefinidos
+    val a = 17.0
+    val b = 5.0
+
+    println("Calculadora")
+    println("Primer valor: $a")
+    println("Segundo valor: $b")
+
+    // Ejecutar la operación
+    val resultado = calcular(a, b)
+    println("Resultado de la multiplicación :$resultado.")
+}
+
+// Función principal que llama a la multiplicación
+fun calcular(a: Double, b: Double): Double {
+    return multiplicar(a, b)
+}
+
+// Operación matemática
+fun multiplicar(a: Double, b: Double): Double = a * b
+
+Calculadora
+Primer valor: 17.0
+Segundo valor: 5.0
+Resultado de la multiplicación :85.0.
+----------------------------------------------------------
+fun main() {
+    // Valores predefinidos
+    val a = 17.0
+    val b = 5.0
+
+    println("Calculadora")
+    println("Primer valor: $a")
+    println("Segundo valor: $b")
+
+    // Ejecutar la operación
+    val resultado = calcular(a, b)
+    println("Resultado de la División :$resultado.")
+}
+
+// Función principal que llama a la División
+fun calcular(a: Double, b: Double): Double {
+    return dividir(a, b)
+}
+
+// Operación matemática
+fun dividir(a: Double, b: Double): Double {
+    if (b == 0.0) {
+        throw IllegalArgumentException("No se puede dividir entre cero.")
+    }
+    return a / b
+}
+
+
+Calculadora
+Primer valor: 17.0
+Segundo valor: 5.0
+Resultado de la División :3.4.
