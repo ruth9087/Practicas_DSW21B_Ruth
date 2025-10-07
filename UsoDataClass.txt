@@ -1,0 +1,51 @@
+
+  //Uso del dataclass//
+/**
+    data class Estudiante(
+    val nombre: String,
+    val edad: Int,
+    val carrera: String,
+    val telefono: String?,
+    )
+   
+   fun main() {
+       val student1 = Estudiante("Juanito", 20, "Sistemas", null)
+       val student2 = Estudiante("Catalino", 21, "Sistemas", "")
+       val student3 = Estudiante("Ludovico", 19, "Sistemas", "")
+       
+       println(student1)
+               
+       val ageAverage = (student1.edad + student2.edad + student3.edad) / 3
+               
+       println(ageAverage)
+       
+   }
+   */
+
+
+   data class Producto(
+   val id: Int,
+   val nombre: String,
+   val categoria: String,
+   val marca: String,
+   val precio: Int,
+   val estado: String,
+   val promocion: String?,
+   )
+   
+   fun main() {
+       val listProduct= listOf( 
+           Producto(1, "Computadora", "Dispositivo tecnologico", "HP", 250, "Disponible", ""),
+           Producto(4, "Telefono", "Dispositivo tecnologico", "Samsung",100, "Disponible", ""),
+           Producto(2, "Tablet", "Dispositivo tecnologico", "Samsung",120, "Disponible", "")
+       )
+       //intln(listProduct[1])
+       
+                      
+      val ageAverage =( listProduct[0].precio + listProduct[1].precio + listProduct[2].precio) /3
+
+               
+       println(ageAverage)
+       
+   }
+   
