@@ -1,0 +1,88 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ 
+fun main() {
+    println("Hello, world!!!")
+}
+*/
+
+//Asignar los valores a array null. Los valores deben ser para las posiciones
+//0=2: 1=3; 2=0
+//numbersNull[0]=2
+
+/**
+fun main() {
+    
+
+//Arreglo nulo
+val numbersNull:Array<Int?> = arrayOfNulls(3)
+numbersNull[0] = 2
+for(number in numbersNull) {
+    println(number)
+}
+
+}
+*/
+
+
+
+
+/*Promedio de calificaciones
+ * GUardar en un arreglo las notas de 5 estudiantes
+ *Calcular el promedio usando un bucle
+ */
+
+/*
+fun main() {
+    
+    val notasNull : Array<Int?>=arrayOfNull(5)
+    notasNull[0] = 8
+    notasNull[1] = 7
+    notasNull[2] = 8
+    notasNull[3] = 9
+    notasNull[4] = 10
+    
+    var suma = 0
+    
+    for (i in notasNull.indices) {
+        println("Indices :$i, Notas = ${notasNull[i]}")
+        suma += notasNull[i] ?:0
+        
+        if (i == 4){
+          
+        }
+    }
+    
+    **/
+
+/*
+fun main () {
+    //NO se pueden modificar
+    val daysOfWeek = listOf("Lunes", "Martes" ,"Miercoles", "Juves")
+    println(daysOfWeek)
+    
+    //se puede modificar
+    val fruits = mutableListOf("Mango", "Jocote", "Manzana")
+    fruits.add("Naranja")
+    fruits.add("Fresa")
+     println(fruits)
+     
+     **/
+     
+     
+     /*Hacer un codigo que pemita guadar en una lista los numeros pares entre 1 y 100 **/
+
+fun main() {
+    val par = mutableListOf<Int?>()
+
+    for (num in 1..100) {
+        if (num % 2 == 0) {
+            par.add(num)
+        }
+    }
+
+    println("Números pares entre 1 y 100: $par")
+}
+
+    
